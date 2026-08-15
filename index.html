@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Your Tutor — Bath Year 1</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #fff; --line: #e7eaef; --line2: #d9dee6;
+    --text: #191d26; --muted: #626b7d; --faint: #97a0b1; --known: #3556e0;
+    --font: 'Segoe UI Variable Text', 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #101318; --card: #1a1f28; --line: #272e3a; --line2: #333c4c;
+            --text: #e9edf4; --muted: #9aa5b8; --faint: #6b7689; --known: #7c95f5; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; background: var(--bg); color: var(--text);
+    font-family: var(--font); display: grid; place-items: center; padding: 32px 20px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { width: 100%; max-width: 720px; }
+  h1 { font-size: 21px; letter-spacing: -0.02em; margin: 0; font-weight: 650; }
+  .sub { color: var(--faint); font-size: 12.5px; margin-top: 4px; }
+  .grid { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; margin-top: 26px; }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+  a.card {
+    display: block; text-decoration: none; color: inherit; background: var(--card);
+    border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px;
+    transition: border-color .15s, transform .1s;
+  }
+  a.card:hover { border-color: var(--line2); transform: translateY(-2px); }
+  a.card h2 { font-size: 16px; margin: 0 0 6px; font-weight: 650; }
+  a.card p { margin: 0; font-size: 13px; color: var(--muted); line-height: 1.6; }
+  .go { margin-top: 12px; font-size: 12.5px; font-weight: 600; color: var(--known); }
+  .note {
+    margin-top: 26px; font-size: 12.5px; color: var(--muted); line-height: 1.7;
+    border-top: 1px solid var(--line); padding-top: 16px;
+  }
+  .shield { width: 26px; height: 26px; color: var(--known); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div style="display:flex;align-items:center;gap:11px">
+      <svg class="shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 3l7 2.5v5.6c0 4.4-2.9 7.6-7 9.4-4.1-1.8-7-5-7-9.4V5.5z" />
+        <path d="M8.2 9.3h7.6M8.6 12h6.8M9.4 14.7h5.2" />
+        <circle cx="12" cy="6.9" r="1" fill="currentColor" stroke="none" />
+      </svg>
+      <div>
+        <h1>Your Tutor</h1>
+        <div class="sub">University of Bath &middot; Year 1, Semester 1</div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <a class="card" href="./probability/">
+        <h2>Probability &amp; Statistics 1A</h2>
+        <p>98 pages decoded line by line, 34 animations, 30 labs, unlimited generated questions and street-level puzzles.</p>
+        <div class="go">Open &rarr;</div>
+      </a>
+      <a class="card" href="./algebra/">
+        <h2>Algebra 1A</h2>
+        <p>67 pages decoded line by line, 17 animations, 21 labs, computed questions from complex numbers to determinants.</p>
+        <div class="go">Open &rarr;</div>
+      </a>
+    </div>
+
+    <div class="note">
+      Each app asks for your lecture-notes PDF the first time you open it on a device. The file is
+      stored in that browser only &mdash; it is never uploaded, and this site does not host the notes.
+      Your progress, mistakes and flashcard schedule are saved in the same browser, so use the same
+      one to keep them.
+    </div>
+  </div>
+</body>
+</html>
