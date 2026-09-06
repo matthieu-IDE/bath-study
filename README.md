@@ -23,5 +23,12 @@ no accounts and no tracking; everything runs on your device.
 
 ## What's in this repository
 
-The built static sites and the two sets of lecture notes. Source for the apps lives in the
-`bath-smartstudy` and `bath-algebra` projects.
+The built static sites and the two sets of lecture notes. The full editable probability app is in
+[`source/probability`](source/probability), including build instructions, all 98 page lessons and validation.
+The algebra source remains in the separate `bath-algebra` project.
+
+To rebuild probability: run `npm ci` and `npm run build` in `source/probability`, then copy its `dist/` contents into `probability/`.
+
+The probability Study Studio includes controlled animations, assumption experiments, page-specific transfer
+problems, a notation dictionary and saved self-assessed recall reviews. Individual lessons support links such as
+[page 7](https://matthieu-ide.github.io/bath-study/probability/#study/7).
